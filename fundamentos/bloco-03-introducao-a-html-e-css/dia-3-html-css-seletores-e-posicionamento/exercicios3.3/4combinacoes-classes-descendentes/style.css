@@ -1,0 +1,18 @@
+.frases {
+    background-color: yellow;
+    color:green;
+
+    }
+    li:nth-child(odd) {
+        color: black;
+        text-transform: uppercase;
+            
+    }
+.combinacoes {
+    color:red;
+    border: 1px solid black;
+}
+li {
+  font-size: 20px;
+  font-weight: italic;
+}

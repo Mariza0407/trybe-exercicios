@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+/* EXERCICIO-01 */
+const elementH1 = document.createElement('h1');
+        elementH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+        document.body.appendChild(elementH1);
+     /*    console.log(elementH1); */
+
+/* /* EXERCICIO-02 */
+const elementMain = document.createElement('main');
+        elementMain.className = 'main-content';
+        document.body.appendChild(elementMain);
+       /*  console.log(elementMain); */
+
+/* EXERCICIO-03 */
+//Tag Main recebe como filho a tag sestion.
+const elementSectionCenter = document.createElement('section');
+        elementSectionCenter.className = 'center-content';
+        elementMain.appendChild(elementSectionCenter);
+        /* console.log(elementSectionCenter); */
+ 
+/*  EXERCICIO-04       */ 
+const paragraphP = document.createElement('p');
+        paragraphP.innerText = 'vamo-que-vamo';
+       elementSectionCenter.appendChild(paragraphP);
+       /* console.log(paragraphP);
+ */
+/* EXERCICIO-05        */ 
+//Tag main recebe como filho a section left.
+const elementSectionLeft = document.createElement('section');
+       elementSectionLeft.className = 'left-content';
+       elementMain.appendChild(elementSectionLeft);
+        /* console.log(elementSectionLeft); */
+
+/* EXERCICIO-06    */     
+//Criei uma section right e coloquei dentro da tag main.
+const elementSectionRight = document.createElement('section');
+        elementSectionRight.className = 'right-content';
+        elementMain.appendChild(elementSectionRight);
+      /*   console.log(elementSectionRight); */ 
+
+/*  EXERCICIO-07   */   
+
+
+
+
+
+/* EXERCICIO-08 */
+//Criei um elemento UL de lista não ordenada.
+const elementUl = document.createElement('ul');
+//Anexei o elemento UL na section Right da questão 6  . 
+      elementSectionRight.appendChild(elementUl);
+// Crei um array.
+const arrayNumber = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis',
+ 'sete', 'oito', 'nove', 'dez'];
+//CRiei um elemento li.
+const sectionList = document.createElement('li');
+//Fiz um for/in 
+for (let numeros in arrayNumber) {
+    const elementLi = document.createElement('li');
+    elementLi.innerHTML = arrayNumber[numeros];
+    elementUl.appendChild(elementLi);
+}
+
+/* EXERCICIO-08 */
+//Fiz um index do 1 ao 3.
+for (let index = 1; index <= 3; index += 1) {
+//criei um elemento h3.  
+  const elementH3 = document.createElement('h3');
+//esse elemento de nome trybe, vai para todo meu index.  
+  elementH3.innerHTML = 'trybe' + index;
+//ADicionei meu elemento h3 como filho do elemento main.   
+  elementMain.appendChild(elementH3);
+}
+
+/* ALTERAÇÕES */
+/* EXERCICIO-01 */
+//criei um classe title e adicionei como filha do h1.
+const elementTitle = document.createElement('title');
+  elementTitle.className = 'title';
+  elementH1.appendChild(elementTitle);
+
+/* EXERCICIO-02 */
+
+
+
+
+    </script>
+  </body>
+</html>

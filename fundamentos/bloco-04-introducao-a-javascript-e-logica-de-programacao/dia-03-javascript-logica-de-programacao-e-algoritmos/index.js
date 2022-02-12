@@ -17,7 +17,7 @@ for (let index = word.length - 1; index >= 0; index -=1) {
      newWord += word[index];
 }
 console.log(newWord); rebyrt
- */
+/*  */
 
 /* EXERCICIO-03- Escreva dois algoritmos: um que retorne a maior palavra deste array e outro que retorne a menor. Considere o número de caracteres de cada palavra.
 
@@ -43,7 +43,7 @@ console.log(smallWord); *///[ 'css' ]
 
 // EXERCICIO-4- Um número primo é aquele divisível apenas por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50
 
-   /*  exibirNummerosPrimos(50);
+ /*   exibirNummerosPrimos(50);
     function exibirNummerosPrimos(limite){
         for (let numero = 2; numero <= limite; numero++) {
             if (numeroPrimo(numero)) console.log(numero);
@@ -57,5 +57,7 @@ console.log(smallWord); *///[ 'css' ]
                 return false;
             }
         }
-       return true; 
-}  */
+       return true;
+    }
+ */
+

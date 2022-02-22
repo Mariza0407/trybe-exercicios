@@ -24,3 +24,4 @@ window.onload = function (event) {
     const submitBtn = document.querySelector('#submitBt');
     submitBtn.addEventListener('click', SubmitButton);
 };
+alert('oi');

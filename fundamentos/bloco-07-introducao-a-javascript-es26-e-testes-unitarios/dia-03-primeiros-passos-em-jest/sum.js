@@ -1,3 +1,4 @@
+// sum.js
 function sum(a, b) {
     if (typeof a !== 'number' || typeof b !== 'number') {
       throw new Error('parameters must be numbers');
@@ -5,8 +6,11 @@ function sum(a, b) {
   
     return a + b;
   }
+  
+  module.exports = sum;
 
-  function myRemove(arr, item) {
+//   myRemove.js
+function myRemove(arr, item) {
     let newArr = [];
     for (let index = 0; index < arr.length; index += 1) {
       if (item !== arr[index]) {
@@ -15,6 +19,4 @@ function sum(a, b) {
     }
     return newArr;
   }
-
-
-  module.exports = {sum, myRemove};
+  module.exports = myRemove;

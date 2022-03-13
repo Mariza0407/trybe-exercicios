@@ -61,7 +61,7 @@ const books = [
     },
   ];
   
-  // Adicione o código do exercício aqui:
+
 // 4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
 // Dica: use as funções filter e sort
 const expectedResult = [
@@ -89,5 +89,8 @@ const expectedResult = [
   ];
   
   function oldBooksOrdered() {
-    // escreva seu código aqui
+      //fazer uma constante onde o ano atual recebe data atual, getFullYar retorna data de acordo com a hora local.
+      const anoAtual = new date().getFullYear();
+        return books.filter((book) => (book.releaseYear <  anoAtual - 60)).sort((elementoA, elementoB) => elementoA.releaseYear  - elementoB.releaseYear);
   }
+       console.log(expectedResult);

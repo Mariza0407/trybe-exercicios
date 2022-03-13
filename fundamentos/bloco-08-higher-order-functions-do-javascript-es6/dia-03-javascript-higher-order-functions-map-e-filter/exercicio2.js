@@ -91,5 +91,9 @@ const expectedResult = [
   ];
   
   function nameAndAge() {
-    // escreva seu código aqui
+    return books.map((book) => ({
+        author: book.author.name,
+        ///para descobrir qunatos anos a pessoa tinha quando lançou subtraí data de lançamento da data de nascimento.
+        age: book.releaseYear - book.author.birthYear,})).sort((elementoA, elementoB) => elementoA.age - elementoB.age);
   }
+  console.log(nameAndAge(expectedResult));

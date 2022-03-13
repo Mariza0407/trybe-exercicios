@@ -72,6 +72,7 @@ const expectedResult = [
     'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
   ];
   
-  function formatedBookNames() {
-    // escreva seu código aqui
+  function formatedBookNames(){
+      return books.map((book) => `${book.name} - ${book.genre} - ${book.author}`);
   }
+  console.log(formatedBookNames(expectedResult));

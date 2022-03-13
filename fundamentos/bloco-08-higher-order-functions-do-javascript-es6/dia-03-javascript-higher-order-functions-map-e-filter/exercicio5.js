@@ -61,7 +61,7 @@ const books = [
     },
   ];
   
-  // Adicione o código do exercício aqui:
+ 
 // 5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
 const expectedResult = [
     'Frank Herbert',
@@ -71,5 +71,10 @@ const expectedResult = [
   ];
   
   function fantasyOrScienceFictionAuthors() {
-    // escreva seu código aqui
+      //fazer uma const que receber os generos que preciso
+      const autorNome = ['Ficção Científica', 'Fantasia']
+      //filtrar do array books os generos que peciso e incluir na constante autorNome
+      //pegar esse array filtrado e gerar um novo array com map puxando somente o nome e ordenar som sort
+    return books.filter((book) => autorNome.includes(book.genre)).map((book) => book.author.name).sort();
   }
+  console.log(fantasyOrScienceFictionAuthors(expectedResult));

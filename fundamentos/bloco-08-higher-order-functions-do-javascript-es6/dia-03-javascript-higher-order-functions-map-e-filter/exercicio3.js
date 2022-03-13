@@ -97,7 +97,7 @@ const expectedResult = [
   ];
   
   function fantasyOrScienceFiction() {
-    return books.filter((book) => (book.genre === 'fantasia' || book.genre === 'ficção científica'));
-    
+    return books.filter((book) => (book.genre === 'Fantasia' || book.genre === 'Ficção Científica'));
+        
   }
-  console.log((expectedResult));
+  console.log(fantasyOrScienceFiction(expectedResult));

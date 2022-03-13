@@ -90,7 +90,7 @@ const expectedResult = [
   
   function oldBooksOrdered() {
       //fazer uma constante onde o ano atual recebe data atual, getFullYar retorna data de acordo com a hora local.
-      const anoAtual = new date().getFullYear();
+      const anoAtual = new Date().getFullYear();
         return books.filter((book) => (book.releaseYear <  anoAtual - 60)).sort((elementoA, elementoB) => elementoA.releaseYear  - elementoB.releaseYear);
   }
-       console.log(expectedResult);
+       console.log(oldBooksOrdered(expectedResult));

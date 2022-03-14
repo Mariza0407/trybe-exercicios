@@ -71,10 +71,10 @@ const expectedResult = [
   ];
   
   function fantasyOrScienceFictionAuthors() {
-      //fazer uma const que receber os generos que preciso
+      //fazer uma const que recebe os generos que preciso
       const autorNome = ['Ficção Científica', 'Fantasia']
       //filtrar do array books os generos que peciso e incluir na constante autorNome
-      //pegar esse array filtrado e gerar um novo array com map puxando somente o nome e ordenar som sort
+      //pegar esse array filtrado e gerar um novo array com (map) puxando somente o nome e ordenar som sort
     return books.filter((book) => autorNome.includes(book.genre)).map((book) => book.author.name).sort();
   }
   console.log(fantasyOrScienceFictionAuthors(expectedResult));

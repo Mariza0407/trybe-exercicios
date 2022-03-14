@@ -61,7 +61,7 @@ const books = [
     },
   ];
   
-  // Adicione o código do exercício aqui:
+ 
 // 6 - Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
 const expectedResult = [
     'O Senhor dos Anéis',
@@ -70,5 +70,11 @@ const expectedResult = [
   ];
   
   function oldBooks() {
-    // escreva seu código aqui
+      //fazer uma const para atribuir a data atual 
+    const anoAtual = new Date().getFullYear();
+    //pegar o array books e filtrar, trazer somente os que tem mais de 60 anos e com (map) gerar um novo
+    //array somente com o nome. 
+    return books.filter((book) => (book.releaseYear <  anoAtual - 60)).map((book) => book.name);
   }
+  console.log(oldBooks(expectedResult));
+  

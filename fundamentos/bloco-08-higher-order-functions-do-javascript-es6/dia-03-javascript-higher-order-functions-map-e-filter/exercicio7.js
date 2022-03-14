@@ -66,7 +66,9 @@ const books = [
 const expectedResult = 'O Senhor dos Anéis';
 
 function authorWith3DotsOnName() {
-  // escreva seu código aqui
+  //endsWith = termina com...split = divide por " " espaços
+  return books.find((book) => (book.author.name.split(' ').filter((palavra) => palavra.endsWith('.')).length === 3)).name;
+  
 }
 
-  // Adicione o código do exercício aqui:
+console.log(authorWith3DotsOnName());

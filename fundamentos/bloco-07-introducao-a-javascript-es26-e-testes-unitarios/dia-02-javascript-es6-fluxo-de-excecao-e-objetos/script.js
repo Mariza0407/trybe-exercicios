@@ -4,8 +4,8 @@ const países = {
     Espanha: 'Madrid',
     Portugal: 'Lisboa',
   };
-//   const pairKeyValue = Object.entries(países);
-//   console.log(pairKeyValue);
+  const pairKeyValue = Object.entries(países);
+  console.log(pairKeyValue);
 
   for(index in pairKeyValue) {
     console.log('--------');
